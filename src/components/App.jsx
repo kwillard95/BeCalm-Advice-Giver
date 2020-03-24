@@ -1,4 +1,5 @@
 import React from 'react'
+import AdviceBox from './AdviceBox.jsx'
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       BeCalm<i class="far fa-heart"></i>
       </h1>
     </header>
+    <AdviceBox />
     </div>
   )
 }
