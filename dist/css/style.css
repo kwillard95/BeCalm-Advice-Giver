@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  background: url('../img/peaceful.jpeg') no-repeat center center/cover;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+#header h1 {
+  padding: 1.5rem;
+  text-align: center;
+}
