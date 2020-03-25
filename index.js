@@ -13,7 +13,10 @@ const client = contentful.createClient({
 app.get('/advice', (req, res) => {
   client
     .getEntries()
-    .then(entry => console.log(entry.items))
+    .then(entries => {
+      const entryArr = entries.items.map(entry => entry.fields);
+      res.send(entryArr);
+    })
     .catch(err => console.log(err));
 })
 

@@ -12,7 +12,7 @@ export default class App extends React.Component {
 
   getData() {
     axios.get('/advice')
-    .then(response => console.log(response, 'hello'))
+    .then(response => console.log(response.data))
     .catch(err => console.log(err))
   }
 
